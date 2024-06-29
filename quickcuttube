@@ -1,0 +1,8 @@
+# Navigate to your project directory (if not already there)
+cd path/to/quickcuttube-website
+
+# Update remote origin URL (replace with your GitHub username and repository name)
+git remote set-url origin https://github.com/yourusername/quickcuttube-website.git
+
+# Push your local repository to GitHub (push changes to the 'master' branch)
+git push -u origin master
