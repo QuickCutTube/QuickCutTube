@@ -1,8 +1,0 @@
-mkdir quickcuttube-website
-cd quickcuttube-website
-git init
-echo "# QuickCutTube Website" >> README.md
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/quickcuttube-website.git
-git push -u origin master
