@@ -1,4 +1,4 @@
-package com.example.epitome;
+package com.example.epitome.controller;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -14,7 +14,9 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.EventObject;
 
 import static javafx.application.Application.launch;
@@ -91,7 +93,10 @@ public class LoginController extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        BorderPane object = FXMLLoader.load(getClass().getResource("view/login.fxml"));
+
+        File fxmlFile = new File("src/main/resources/com/example/epitome/view/login.fxml");
+        URL url = fxmlFile.toURI().toURL();
+        BorderPane object = FXMLLoader.load(url);
         stage.initStyle(StageStyle.UNDECORATED);
         Scene scene = new Scene(object);
         stage.setTitle("Epitome");

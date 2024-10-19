@@ -8,6 +8,6 @@ module com.example.epitome {
 
     opens com.example.epitome to javafx.fxml;
     exports com.example.epitome;
-    exports com.example.epitome.Controller;
-    opens com.example.epitome.Controller to javafx.fxml;
+    exports com.example.epitome.controller;
+    opens com.example.epitome.controller to javafx.fxml;
 }
